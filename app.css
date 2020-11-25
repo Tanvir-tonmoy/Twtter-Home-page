@@ -1,0 +1,159 @@
+:root{
+--main-colour: #1da1f2;
+--dark-colour: #14171a;
+--footer-link-colour: #aab8c2;
+--footer-top-border-colour: #e6ecf0;
+}
+
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+body,html{
+margin: 0;
+padding: 0;
+}
+p,a,h1,h2,h3,li, span{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 85vh 15vh;
+
+}
+/** left-box **/
+.container .left-box{
+background-image: url(twitter.jpg);
+background-size: cover;
+grid-column: 1 / 2;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.container .left-box ul li{
+list-style-type: none;
+font-size: 18px;
+line-height: 24px;
+margin: 50px 0;
+font-weight: bold;
+color: #fff;
+}
+.container .left-box ul li .icon{
+font-size: 24px;
+margin-right: 15px;
+}
+/*** end left-box **/
+
+/*** right-box **/
+
+.container .right-box{
+background-color:whitesmoke;
+grid-column: 2 / -1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.container .right-box .card{
+min-width:300px ;
+padding: 0 70px;
+}
+
+.container .right-box .card .head{
+display: flex;
+justify-content: space-between;
+
+}
+
+.container .right-box .card .head .logo-icon{
+font-size: 3em;
+color: var(--main-colour);
+}
+
+.container .right-box .card h1{
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--dark-colour);
+    margin-top: 20px;
+
+}
+
+.container .right-box .card p{
+font-size: 16px;
+font-weight: bold;
+color: var(--dark-colour);
+}
+
+
+/** end right-box */
+
+/*** star bottom-box **/
+
+
+.container .bottom-box{
+    background-color: #14171a;
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--footer-top-border-colour);
+}
+
+.container .bottom-box ul{
+    text-align: center;
+}
+
+.container .bottom-box ul li{
+display: inline-block;
+margin: 0 5px;
+}
+
+.container .bottom-box ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color:var(--footer-link-colour) ;
+}
+
+.container .bottom-box ul li a:hover{
+    text-decoration: underline ;
+}
+
+
+
+/*** end bottom-box ***/
+
+/*** buttons ***/
+button.btn{
+    display: block;
+    border:none ;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+button.block{
+width: 100%;
+margin-bottom: .6rem;
+
+}
+button.primary{
+    background-color: var(--main-colour);
+    color: #fff;
+}
+
+button.primary:hover{
+    text-decoration: underline;
+}
+
+button.outline{
+background-color: #fff;
+color: var(--main-colour);
+border: 1px solid var(--main-colour);
+}
+
+button.outline:hover{
+    text-decoration: underline;
+
+
+
+
